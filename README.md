@@ -17,7 +17,7 @@
 - Included 2 modificated for this version of redmine, plugins:
 1. time_logger - for timelogging in tickets
 2. kanban - dynamic dashboard module
-- Author of modifications Alisa Rudenko
+- Author of modifications https://github.com/lyssathelil
 
 
 <<<<<<<<<<<<<<-------SSL------->>>>>>>>>>>>>>
