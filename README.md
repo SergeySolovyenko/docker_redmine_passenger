@@ -1,7 +1,7 @@
 # docker_redmine_passenger
 - Docker-compose for quick setup redmine service with https access and time_logger and kanban plugins (ssl certificate required) 
 
-- Uses Postgres 10 container to store data (tested only with this container)
+- Uses official postgres:10 container to store data and redmine:4.2.1-passenger for redmine app (tested only with this container)
 
 <<<<<<<<<<<<<<-------Instalation------->>>>>>>>>>>>>>
 1. Download to /
