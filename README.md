@@ -44,4 +44,4 @@ Best practice:
 6. after, you can delete container - plugins have been saved in plugin_volume
 7. if after re-creation container - plugins doe's work - do steps 1,4,5
 
-Sergey Solovyenko 2020 Techstudio.TV
+Sergey Solovyenko 2021 Techstudio.TV
