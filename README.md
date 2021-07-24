@@ -4,10 +4,10 @@
 - Uses official postgres:10 container to store data and redmine:4.2.1-passenger for redmine app (tested only with this container)
 
 <<<<<<<<<<<<<<-------Instalation------->>>>>>>>>>>>>>
-1. Download to /
+1. Download to root directory /
 2. Drop your ssl files in to a ssl directory (read manual)
 3. change your user to super user
-4. make needed changes in docker-compose directory
+4. make needed changes in docker-compose.yml file
 5. go to /redmine path
 6. do "docker-compose build"
 7. do "docker-compose up -d"
