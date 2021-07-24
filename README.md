@@ -14,16 +14,16 @@
 8. congrats - you have a working redmine server
 
 <<<<<<<<<<<<<<-------Plugins Included------->>>>>>>>>>>>>>
-Included 2 modificated for this version of redmine, plugins:
+- Included 2 modificated for this version of redmine, plugins:
 1. time_logger - for timelogging in tickets
 2. kanban - dynamic dashboard module
-Author of modifications Alisa Rudenko
+- Author of modifications Alisa Rudenko
 
 
 <<<<<<<<<<<<<<-------SSL------->>>>>>>>>>>>>>
-1.Drop your ssl files in to a directory 
-2./redmine/storage/docker_redmine-data/ssl/
-3.after - add .crt and .key files in docker-composer.yml in command to start passenger
+1. Drop your ssl files in to a directory 
+2. /redmine/storage/docker_redmine-data/ssl/
+3. after - add .crt and .key files in docker-composer.yml in command to start passenger
 
 
 <<<<<<<<<<<<<<-------Ports------->>>>>>>>>>>>>>
