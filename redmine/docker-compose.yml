@@ -1,0 +1,37 @@
+﻿version: '3.3'
+services:
+   postgres:
+     image: postgres:10
+     volumes:
+       - ./storage/postgresql-data:/var/lib/postgresql/data
+     environment:
+       POSTGRES_PASSWORD: "strong_pass"
+       POSTGRES_DB: "redmine"
+       PGDATA: "/var/lib/postgresql/data"
+     restart: always
+
+   redmine:
+     build:
+       context: .
+     image: redmine:4.2.1-passenger
+     ports:
+       - 80:3000
+       - 443:3443
+     volumes:
+       - ./storage/docker_redmine-plugins:/usr/src/redmine/plugins
+       - ./storage/docker_redmine-themes:/usr/src/redmine/public/themes
+       - ./storage/docker_redmine-data:/usr/src/redmine/files
+       - ./storage/docker_redmine-data/ssl:/usr/src/redmine/ssl
+     logging:
+       options:
+         max-size: "100m"
+         max-file: "3"
+     environment:
+       REDMINE_HTTPS: "true"
+       REDMINE_DB_POSTGRES: "postgres"
+       REDMINE_DB_USERNAME: "postgres"
+       REDMINE_DB_PASSWORD: "strong_pass"
+       REDMINE_DB_DATABASE: "redmine"
+       REDMINE_SECRET_KEY_BASE: "…"
+     restart: always
+     command: passenger start --ssl --ssl-certificate /usr/src/redmine/ssl/certificate.crt --ssl-certificate-key /usr/src/redmine/ssl/certificate.key --ssl-port 3443

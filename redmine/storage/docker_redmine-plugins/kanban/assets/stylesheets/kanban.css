@@ -1,0 +1,125 @@
+/* Normal priority issue */
+.my-issue-card {
+  padding: 5px;
+  border: solid 1px #d5d5d5;
+  background-color: #ffffdd;
+  margin: 8px 4px 8px 4px;
+  word-wrap: break-word;
+  text-align: left;
+  white-space: normal;
+  cursor: pointer;
+  position: relative;
+  border-radius:3px;
+}
+
+/* High priority issue */
+.my-issue-card-high-priority {
+  padding: 5px;
+  border: solid 1px #d5d5d5;
+  /* background-color: #ffafaf; */
+  background-color: #FFD4D4;
+  margin: 8px 4px 8px 4px;
+  word-wrap: break-word;
+  text-align: left;
+  white-space: normal;
+  cursor: pointer;
+  position: relative;
+  border-radius:3px;
+}
+
+/* Low priority issue */
+.my-issue-card-low-priority {
+  padding: 5px;
+  border: solid 1px #d5d5d5;
+  background-color: #EAF7FF;
+  margin: 8px 4px 8px 4px;
+  word-wrap: break-word;
+  text-align: left;
+  white-space: normal;
+  cursor: pointer;
+  position: relative;
+  border-radius:3px;
+}
+
+/* Tilt the card wheb dragged */
+.dragged-issue-card {
+  transform: rotate(-10deg);
+}
+
+/* Note on sidebar */
+.my-journal-table {
+  width: 100%;
+  border: solid 1px #d5d5d5;
+  background-color: #ffffff;
+  margin: 8px 0px 8px 0px;
+  word-break : break-all;
+  text-align: left;
+  white-space: normal;
+  border-collapse: separate;
+  border-radius:4px;
+}
+.my-journal-table td {
+  text-align: left !important;
+}
+
+/* New comment table */
+.my-comment-table {
+  width: 100%;
+  margin: 8px 0px 8px 0px;
+}
+
+/* New comment textarea */
+.my-comment-textarea {
+  box-sizing:border-box;
+  resize: none;
+  width: 100%;
+}
+
+/* String ellipsis */
+.my-string-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Normal priority issue (small size) */
+.my-issue-card-small {
+  padding: 3px;
+  border: solid 1px #d5d5d5;
+  background-color: #ffffdd;
+  margin: 4px 4px 4px 4px;
+  word-wrap: break-word;
+  text-align: left;
+  white-space: normal;
+  cursor: pointer;
+  position: relative;
+  border-radius:3px;
+}
+/* High priority issue (small size) */
+.my-issue-card-high-priority-small {
+  padding: 3px;
+  border: solid 1px #d5d5d5;
+  /* background-color: #ffafaf; */
+  background-color: #FFD4D4;
+  margin: 4px 4px 4px 4px;
+  word-wrap: break-word;
+  text-align: left;
+  white-space: normal;
+  cursor: pointer;
+  position: relative;
+  border-radius:3px;
+}
+
+/* Low priority issue (small size) */
+.my-issue-card-low-priority-small {
+  padding: 3px;
+  border: solid 1px #d5d5d5;
+  background-color: #EAF7FF;
+  margin: 4px 4px 4px 4px;
+  word-wrap: break-word;
+  text-align: left;
+  white-space: normal;
+  cursor: pointer;
+  position: relative;
+  border-radius:3px;
+}
